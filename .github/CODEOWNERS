@@ -1,0 +1,36 @@
+# CODEOWNERS file for order-framework-785
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-test @Armor-test/grp-integration @Armor-test/squad-payments
+
+# Directory ownership
+/extensions/ @Armor-test/squad-cloud @Armor-test/dept-automation
+/api/ @Armor-test/squad-reporting @Armor-test/team-logging @Armor-test/squad-database
+/web/ @Armor-test/squad-qa @Armor-test/grp-storage
+/helpers/ @Armor-test/dept-reporting @Armor-test/dept-data
+/src/ @Armor-test/squad-ux @Armor-test/unit-governance
+/core/ @Armor-test/grp-storage @Armor-test/squad-product @Armor-test/squad-payments
+/views/ @Armor-test/dept-automation @Armor-test/squad-qa @Armor-test/unit-cloud
+/scripts/ @Armor-test/dept-reliability @Armor-test/squad-cache
+/internal/ @Armor-test/squad-cache @Armor-test/squad-database @Armor-test/squad-tooling
+/migrations/ @Armor-test/dept-automation @Armor-test/unit-cloud
+/plugins/ @Armor-test/dept-logging @Armor-test/unit-cloud
+/security/ @Armor-test/grp-api @Armor-test/dept-billing
+/app/ @Armor-test/dept-data @Armor-test/squad-payments
+
+# File type ownership
+*.c @Armor-test/unit-devops @Armor-test/squad-ux @Armor-test/unit-cloud
+*.graphql @Armor-test/dept-reliability @Armor-test/unit-design
+*.scala @Armor-test/squad-tooling @Armor-test/squad-product
+*.swift @Armor-test/squad-ml @Armor-test/team-frontend @Armor-test/squad-cache
+*.tsx @Armor-test/team-security @Armor-test/squad-api @Armor-test/squad-performance
+*.tf @Armor-test/grp-reporting @Armor-test/unit-devops @Armor-test/squad-apps
+*.rb @Armor-test/grp-reporting @Armor-test/team-frontend @Armor-test/squad-performance
+*.py @Armor-test/squad-research @Armor-test/dept-api
+*.config @Armor-test/grp-payments @Armor-test/dept-test
+*.yml @Armor-test/grp-search @Armor-test/squad-apps @Armor-test/squad-performance
+*.php @Armor-test/grp-search @Armor-test/dept-release
+
+# Security and special files
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/security/ @Armor-test/security @Armor-test/compliance
